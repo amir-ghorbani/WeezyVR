@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86"> -->
+    <title>Key Locations Before The Fire</title>
+
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+
+    <!-- To have access to interactivity:
+    1. Google: event set component aframe
+    2. Go to: aframe-event-set-component - npm
+    3. Copy and paste this line: -->
+    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+
+    <!-- To make UI elements always facing camera -->
+    <!-- https://www.npmjs.com/package/aframe-look-at-component -->
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+
+
+    <!-- Go to AR.js website -->
+    <!-- https://ar-js-org.github.io/AR.js-Docs/marker-based/ -->
+    <!-- https://ar-js-org.github.io/AR.js-Docs/ -->
+    <!-- AR.js with Marker Tracking + Location Based AR: -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+    <!-- https://github.com/IdeaSpaceVR/aframe-particle-system-component -->
+    <!-- https://www.npmjs.com/package/aframe-particle-system-component -->
+    <script
+        src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+
+        <!-- https://www.npmjs.com/package/aframe-extras -->
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="style-ar.css">
+
+    <script src="./script-full-screen.js"></script>
+
+
+
+
+</head>
+
+
+<body>
+    
+
+    <!-- HTML to render as a material. -->
+    <section class="text title">
+        <div>
+            <div>
+                <h2>Key locations before the fire</h2>
+                
+                <img src="./image/01.png" alt="">
+       
+            </div>
+        </div>
+    </section>
+
+
+    <a-scene vr-mode-ui="enabled: false" embedded arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3_PARITY65">
+
+        <!-- <a-marker preset="hiro"> -->
+        <!-- <a-marker preset="kanji"> -->
+
+        <a-marker type="barcode" value="24">
+
+            <a-entity class="london" rotation="0 45 0" position="0 0 0" look-at="#camera" scale="0.7 0.7 0.7"
+                event-set__scale01="_event: mouseenter; scale: 1.2 1.2 1.2"
+                event-set__scale02="_event: mouseleave; scale: 0.5 0.5 0.5">
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#A11B1B"
+                    opacity="0.8"></a-cylinder>
+                <a-entity text="value: London Before the Fire; color: white; wrapCount: 10; font:dejavu; align: center">
+                </a-entity>
+            </a-entity>
+
+            <a-entity class="st-paul" rotation="0 45 0" position="-0.1 0 -2.1" look-at="#camera" scale="0.7 0.7 0.7"
+                event-set__scale01="_event: mouseenter; scale: 1.2 1.2 1.2"
+                event-set__scale02="_event: mouseleave; scale: 0.5 0.5 0.5">
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#A11B1B"
+                    opacity="0.8"></a-cylinder>
+                <a-entity text="value: St Paul Cathedral; color: white; wrapCount: 10; font:dejavu; align: center">
+                </a-entity>
+            </a-entity>
+
+            <a-entity class="tower" rotation="0 45 0" position="2.6 0 -1.1" look-at="#camera" scale="0.7 0.7 0.7"
+                event-set__scale01="_event: mouseenter; scale: 1.2 1.2 1.2"
+                event-set__scale02="_event: mouseleave; scale: 0.5 0.5 0.5">
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#A11B1B"
+                    opacity="0.8"></a-cylinder>
+                <a-entity text="value: Tower of London; color: white; wrapCount: 10; font:dejavu; align: center">
+                </a-entity>
+            </a-entity>
+
+            <a-entity class="seething-lane" rotation="0 45 0" position="2.15 0 -1.4" look-at="#camera"
+                scale="0.7 0.7 0.7" event-set__scale01="_event: mouseenter; scale: 1.2 1.2 1.2"
+                event-set__scale02="_event: mouseleave; scale: 0.5 0.5 0.5">
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#A11B1B"
+                    opacity="0.8"></a-cylinder>
+                <a-entity text="value: Seething Lane; color: white; wrapCount: 10; font:dejavu; align: center">
+                </a-entity>
+            </a-entity>
+
+            <a-entity class="royal-exchange" rotation="0 45 0" position="1.25 0 -2.15" look-at="#camera"
+                scale="0.7 0.7 0.7" event-set__scale01="_event: mouseenter; scale: 1.2 1.2 1.2"
+                event-set__scale02="_event: mouseleave; scale: 0.5 0.5 0.5">
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#A11B1B"
+                    opacity="0.8"></a-cylinder>
+                <a-entity text="value: Royal Exchange; color: white; wrapCount: 10; font:dejavu; align: center">
+                </a-entity>
+            </a-entity>
+
+            <a-entity class="london-bridge" rotation="0 45 0" position="1.1 0 -1.1" look-at="#camera"
+                scale="0.7 0.7 0.7" event-set__scale01="_event: mouseenter; scale: 1.2 1.2 1.2"
+                event-set__scale02="_event: mouseleave; scale: 0.5 0.5 0.5">
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#A11B1B"
+                    opacity="0.8"></a-cylinder>
+                <a-entity text="value: London Bridge; color: white; wrapCount: 10; font:dejavu; align: center">
+                </a-entity>
+            </a-entity>
+
+            <a-entity class="whitehall" rotation="0 45 0" position="-4.5 0 -0.2" look-at="#camera" scale="0.7 0.7 0.7"
+                event-set__scale01="_event: mouseenter; scale: 1.2 1.2 1.2"
+                event-set__scale02="_event: mouseleave; scale: 0.5 0.5 0.5">
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#A11B1B"
+                    opacity="0.8"></a-cylinder>
+                <a-entity text="value: Whitehall; color: white; wrapCount: 10; font:dejavu; align: center">
+                </a-entity>
+            </a-entity>
+
+        </a-marker>
+        
+
+        <!-- <a-entity camera></a-entity> -->
+        <a-entity camera id="camera">
+            <a-cursor material="color: white" scale="0.7 0.7 0.7"></a-cursor>
+        </a-entity>
+    </a-scene>
+
+    <!-- HTML to render as a material. -->
+    <section class="text nav">
+
+        <div class="nav-child01">
+            <div>
+                <h2><a href="instruction02.html">Back</a></h2>
+            </div>
+            <!-- <div >
+                <img id="full-screen" src="./image/FullScreen.svg" alt="">
+            </div> -->
+            <div>
+                <h2><a href="before-locations-map.html">Next</a></h2>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+
+<script>
+    
+
+
+
+    document.querySelector('.london')
+        .addEventListener('mousedown', e => {
+            location.href = "london.html";
+        });
+
+    document.querySelector('.tower')
+        .addEventListener('mousedown', e => {
+            location.href = "tower.html";
+        });
+
+    document.querySelector('.seething-lane')
+        .addEventListener('mousedown', e => {
+            location.href = "seething-lane.html";
+        });
+
+    document.querySelector('.royal-exchange')
+        .addEventListener('mousedown', e => {
+            location.href = "royal-exchange.html";
+        });
+
+    // document.querySelector('.stpaul')
+    // .addEventListener('mousedown', e => {
+    //     location.href = "st-paul.html";
+    // });
+
+    document.querySelector('.whitehall')
+        .addEventListener('mousedown', e => {
+            location.href = "whitehall.html";
+        });
+
+    document.querySelector('.london-bridge')
+        .addEventListener('mousedown', e => {
+            location.href = "london-bridge.html";
+        });
+
+    document.querySelector('.st-paul')
+        .addEventListener('mousedown', e => {
+            location.href = "st-paul.html";
+        });
+</script>
+
+<!-- <script>
+    var goFS = document.getElementById("full-screen");
+goFS.addEventListener("click", function() {
+document.body.requestFullscreen();
+}, false);
+</script> -->
+
+</html>
