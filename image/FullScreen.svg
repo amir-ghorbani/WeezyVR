@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.721" height="15.6" viewBox="0 0 18.721 15.6">
+  <defs>
+    <clipPath id="clip-FullScreen">
+      <rect width="18.72" height="15.6"/>
+    </clipPath>
+  </defs>
+  <g id="FullScreen" clip-path="url(#clip-FullScreen)">
+    <path id="iconmonstr-fullscreen-thin" d="M18.72,17.6H0V2H18.72ZM17.94,2.78H.78V16.82H17.94ZM14.82,8.24h-.78V5.712L5.272,14.48H7.8v.78H3.9v-3.9h.78v2.528L13.448,5.12H10.92V4.34h3.9v3.9Z" transform="translate(0 -2)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>
